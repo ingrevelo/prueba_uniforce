@@ -1,2 +1,3 @@
-Hola <?php echo htmlspecialchars($_POST['nombre']); ?>.
-Usted tiene <?php echo (int)$_POST['edad']; ?> años.
+Nodo correspondiente al TRAFO <?php echo htmlspecialchars($_POST['trafo']); ?>
+Zona: <?php echo (int)$_POST['zona']; ?>
+Municipio: <?php echo (int)$_POST['municipio']; ?>
