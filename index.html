@@ -74,7 +74,7 @@
   <div class="form-group">
     <label for="contact-name" class="col-sm-2 control-label">Fecha de Entrega:</label>
     <div class="col-sm-10">
-      <input type="date" class="form-control" id="fecha">
+      <input type="date" class="form-control" id="theDate">
     </div>
   </div>  
   &nbsp  
@@ -90,3 +90,12 @@
   </div>
 </form>
 </html>
+
+var date = new Date();
+var day = date.getDate();
+var month = date.getMonth() + 1;
+var year = date.getFullYear();
+if (month < 10) month = "0" + month;
+if (day < 10) day = "0" + day;
+var today = year + "-" + month + "-" + day;
+document.getElementById('theDate').value = today;
